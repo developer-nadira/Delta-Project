@@ -1,0 +1,286 @@
+<% layout("/layouts/boilerplate") -%>
+
+<div class="main-nav-up">
+  <div class="filter-direction">
+    <div><i class="fa-solid fa-chevron-left"></i></div>
+
+    <div id="filters">
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/catagory/trending">
+            <div class="icon-container"><i class="fas fa-fire"></i></div>
+            <div class="text-container">Trending</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/rooms">
+            <div class="icon-container"><i class="fa-solid fa-bed"></i></div>
+            <div class="text-container">Rooms</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/tiny homes">
+            <div class="icon-container">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="text-container">Tiny homes</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/beach">
+            <div class="icon-container">
+              <i class="fa-solid fa-umbrella-beach"></i>
+            </div>
+            <div class="text-container">Beach</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/iconic cites">
+            <div class="icon-container">
+              <i class="fa-solid fa-mountain-city"></i>
+            </div>
+            <div class="text-container">Iconic cites</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/mountains">
+            <div class="icon-container">
+              <i class="fa-solid fa-mountain-sun"></i>
+            </div>
+            <div class="text-container">Mountains</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/camping">
+            <div class="icon-container">
+              <i class="fa-solid fa-campground"></i>
+            </div>
+            <div class="text-container">Camping</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/amazing pools">
+            <div class="icon-container">
+              <i class="fa-solid fa-person-swimming"></i>
+            </div>
+            <div class="text-container">Amazing pools</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/castles">
+            <div class="icon-container">
+              <i class="fa-brands fa-fort-awesome"></i>
+            </div>
+            <div class="text-container">Castles</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/arctic">
+            <div class="icon-container">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <div class="text-container">Arctic</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/amazing views">
+            <div class="icon-container">
+              <i class="fa-regular fa-face-grin-hearts"></i>
+            </div>
+            <div class="text-container">Amazing views</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/lake">
+            <div class="icon-container">
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <div class="text-container">Lake</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/sky-in">
+            <div class="icon-container">
+              <i class="fa-solid fa-person-skating"></i>
+            </div>
+            <div class="text-container">Sky-in/out</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/countryside">
+            <div class="icon-container">
+              <i class="fa-solid fa-house-chimney-window"></i>
+            </div>
+            <div class="text-container">Countryside</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/islands">
+            <div class="icon-container">
+              <i class="fa-solid fa-igloo"></i>
+            </div>
+            <div class="text-container">Islands</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/windmills">
+            <div class="icon-container">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <div class="text-container">Windmills</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter">
+        <div class="filter-content">
+          <a href="/listings/category/creative spaces">
+            <div class="icon-container">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="text-container">Creative spaces</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-chevron-right"></i>
+    </div>
+  </div>
+
+  <div class="tax-toggle">
+    <div class="form-check-reverse form-switch">
+      <input
+        class="form-check-input"
+        type="checkbox"
+        role="switch"
+        id="flexSwitchCheckDefault"
+      />
+      <label class="form-check-label" for="flexSwitchCheckDefault"
+        >Display total after taxes</label
+      >
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------- Listing Cards ---------------------------------------- -->
+<div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1">
+  <% for(let listing of allListings) { %>
+
+  <a href="/listings/<%= listing._id %>" class="listing-link">
+    <div class="card col listing-card">
+      <img
+        src="<%= listing.image.url %>"
+        class="card-img-top"
+        alt="listing_image"
+        style="height: 20rem"
+      />
+
+      <div class="card-img-overlay"></div>
+
+      <div class="card-body">
+        <p class="card-text">
+          <b><%= listing.title %></b> <br />
+          &dollar; <%= listing.price.toLocaleString("en-US") %>
+          <i class="tax-info"> &nbsp; + 18% GST</i>
+          / night
+        </p>
+      </div>
+    </div>
+  </a>
+  <% } %>
+</div>
+
+<script>
+  document
+    .querySelector(".fa-chevron-left")
+    .addEventListener("click", function () {
+      const filtersContainer = document.getElementById("filters");
+      if (filtersContainer.scrollLeft > 0) {
+        filtersContainer.scrollTo({
+          left: filtersContainer.scrollLeft - 250,
+          behavior: "smooth",
+        });
+      }
+    });
+
+  document
+    .querySelector(".fa-chevron-right")
+    .addEventListener("click", function () {
+      const filtersContainer = document.getElementById("filters");
+      filtersContainer.scrollTo({
+        left: filtersContainer.scrollLeft + 250,
+        behavior: "smooth",
+      });
+    });
+  // document.querySelector(".filter.trending").addEventListener("mousedown", function() {
+  //   this.classList.add("active");
+  // });
+
+  // document.addEventListener("mouseup", function() {
+  //   const trendingFilter = document.querySelector(".filter.trending");
+  //   if (trendingFilter) {
+  //     trendingFilter.classList.remove("active");
+  //   }
+  // });
+
+  let taxToggle = document.querySelector("#flexSwitchCheckDefault");
+  let taxInfo = document.getElementsByClassName("tax-info");
+  taxToggle.addEventListener("click", () => {
+    for (info of taxInfo) {
+      if (info.style.display != "inline") {
+        info.style.display = "inline";
+      } else {
+        info.style.display = "none";
+        //way-2
+        // info.style.display = info.style.display !== "inline" ? "inline" : "none";
+      }
+    }
+  });
+</script>
