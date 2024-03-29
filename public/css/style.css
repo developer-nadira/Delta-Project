@@ -86,6 +86,7 @@ body {
   align-items: space-evenly;
 }
 
+/* index template  lising card style */
 .listing-card {
   position:  relative !important;
   top: 0;
@@ -165,11 +166,6 @@ h1 {
 }
 
 /* signup.ejs - for login message */
-/* .login-message{
-  text-align: center;
-  margin-top: 2rem;
-} */
-
 .login-message {
   text-align: center;
   margin: 50px auto;
@@ -181,11 +177,7 @@ h1 {
   text-decoration: none;
 }
 
-
 /* ----- Search btn ------ */
-/* .fa-magnifying-glass{
-  color: #fe424d;
-} */
 
 .fa-magnifying-glass:hover{
   color: #fe424d;

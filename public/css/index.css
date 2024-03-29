@@ -137,11 +137,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
+  .form-check-label{
+    cursor: pointer;
+  }
   .form-switch .form-check-input {
     box-shadow: 0 0 10px 5px rgba(136, 136, 136, 0.3);
     border: 0.1px solid rgba(104, 101, 104, 0.533);
+    cursor: pointer;
   }
 
   .form-switch .form-check-input:checked {
@@ -169,32 +174,47 @@
     color: #3498db;
   }
 
-  /* *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  } */
-
-  /* ----------------------------------- */
-
-  /* .filter-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  } */
-
   .text-container {
     margin-top: 0.465rem;
   }
 
+  /* media query for small size */
   @media (width < 767px) {
+     /* Styles for small screens */
+     .nav-link{
+       margin-left: -1.9rem;
+     }
+
+     .form-control {
+      margin-right: 0 !important;
+      margin-left: 0.5rem;
+      padding: 6px 0 6px 6px;
+    }
+
+    .Airbnb-text {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 13rem;
+      padding: 0 !important;
+    }
+
+    .small-menu{
+      display: inline-block;
+      height: 2.7rem !important;
+      border-radius: 2rem !important;
+      font-size: 1rem;
+      background-clip: border-box;
+    } 
+
+    .me-2 {
+      margin-right: 0 !important;
+    }
+
+    button.btn.search-btn{
+      margin-right: 1rem;
+    }
+
     .filter-direction {
       width: 16rem;
       margin-left: -0.2rem;
@@ -213,7 +233,9 @@
     }
   }
 
+  /* media query for medium size */
   @media (768px < width < 992px) {
+     /* Styles for medium screens */
     .filter-direction {
       width: 26rem;
       margin-left: -0.2rem;
@@ -227,6 +249,7 @@
     }
   }
 
+  /* media query for large size */
   @media (992px < width < 1200px) {
     .filter-direction {
       width: 41rem;
@@ -241,6 +264,7 @@
     }
   }
 
+  /* media query for extra large size */
   @media (1200px < width < 1400px) {
     .filter-direction {
       width: 50rem;
@@ -255,6 +279,7 @@
     }
   }
 
+  /* media query for extra extra large size */
   @media (1400px < width) {
     .filter-direction {
       width: 57rem;

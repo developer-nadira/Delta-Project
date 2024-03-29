@@ -6,8 +6,6 @@
     <title>Wanderlust</title>
     <link rel="stylesheet" href="/css/style.css" />
 
-
-
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -33,21 +31,23 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/css/index.css"/>
+    <!-- css for index.ejs template -->
+    <link rel="stylesheet" href="/css/index.css" />
 
     <!-- css for rating -->
-    <link rel="stylesheet" href="/css/rating.css">
+    <link rel="stylesheet" href="/css/rating.css" />
   </head>
   <body>
     <%- include("../includes/navbar.ejs") %>
     <div class="container">
-      <%- include("../includes/flash.ejs") %>
-      <%- body %>
+      <%- include("../includes/flash.ejs") %> <%- body %>
     </div>
 
     <%- include("../includes/footer.ejs") %>
-    <!-- link for Bootstrap js styling -->
+    <!-- css for footer.ejs -->
+    <link rel="stylesheet" href="/css/footer.css" />
 
+    <!-- link for Bootstrap js styling -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

@@ -13,26 +13,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link" href="/">Explore</a>
       </div>
-
-      <!-- <div class="navbar-nav ms-auto">
-        <% if(!currUser){ %>
-        <div class="btn btn-outline-success">
-          <i class="fa-solid fa-bars"></i>
-          <div>
-            <a class="nav-link" href="/signup">Sign Up</a>
-            <a class="nav-link" href="/login">Log in</a>
-          </div>
-        </div>
-        <% } %> <% if(currUser){ %>
-        <a class="nav-link" href="/logout">Logout</a>
-        <% } %>
-      </div> -->
 
       <!-- ----Search from bootstrap--- -->
       <div class="navbar-nav ms-auto">
-        <form class="d-flex" role="search" action="/listings/search" method="GET">
+        <form class="d-flex" action="/listings/destination" method="GET">
           <input
             class="form-control me-2 search-inp"
             type="search"
@@ -46,7 +32,7 @@
       </div>
 
       <div class="navbar-nav ms-auto me-3">
-        <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        <a class="nav-link Airbnb-text"  href="/listings/new">Airbnb your home</a>
         <% if(!currUser){ %>
         <div class="dropdown">
           <button
@@ -63,7 +49,7 @@
           </ul>
         </div>
         <% } else { %>
-        <a class="nav-link btn menu-btn" href="/logout">Logout</a>
+        <a class="nav-link btn menu-btn small-menu" href="/logout">Logout</a>
         <% } %>
       </div>
     </div>

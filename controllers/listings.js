@@ -79,23 +79,17 @@ module.exports.destroyListing = async (req, res) => {
 
 module.exports.filteredListings = async (req, res) => {
   const { category } = req.params;
-  const filteredListings = await Listing.find({ category });
+  const filteredListings = await Listing.find({ category:category });
   res.render("listings/filteredListings", { filteredListings, category });
 };
 
-
-// module.exports.searchListings = async(req, res) => {
-//   // const { destination } = req.params;
-//   console.log(req.params);
-//   const searchListings  = await Listing.find({destination});
-//   // console.log(searchListings);
-//   res.render("listings/searchListings", {searchListings, destination})
-// }
-
 module.exports.searchListings = async (req, res) => {
-  const { destination } = req.query;
+  let { destination } = req.query;
   console.log(req.query);
-  const searchListings = await Listing.find({ country: destination });
+  if (!destination) {
+    return res.status(400).send("Destination parameter is missing");
+  }
+  const searchListings = await Listing.find({ destination });
   console.log(searchListings);
   res.render("listings/searchListings", { searchListings, destination });
 };

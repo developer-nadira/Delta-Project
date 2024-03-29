@@ -3,7 +3,6 @@ const express = require("express");
 const router = express.Router({ mergeParams: true });
 
 // Middleware and utlities
-//We are going into parent directory that's why '..'
 const wrapAsync = require("../utils/wrapAsync.js");
 const reviewController = require("../controllers/reviews.js");
 

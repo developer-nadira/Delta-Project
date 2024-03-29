@@ -1,0 +1,8 @@
+.f-info-socials a{
+    color: #000000;
+    text-decoration: none;
+}
+.f-info-socials a i:hover {
+    color: rgb(255, 72, 0); 
+    transform: scale(1.15) translateY(-2px); 
+}

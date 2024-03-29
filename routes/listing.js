@@ -14,9 +14,11 @@ const { storage } = require("../cloudConfig.js");
 const upload = multer({ storage });
 
 router
-  .route("/")
+  .route('/')
   // Index Route
-  .get(wrapAsync(listingControllers.index))
+  .get(
+  (wrapAsync(listingControllers.index))
+  )
   // Create Route
   .post(
     isLoggedIn,
@@ -25,7 +27,6 @@ router
     wrapAsync(listingControllers.createListing)
   );
 
-// Etake show route er upore rakhte hbe noyto ei new route er 'new' k app.js 'id' vebe khujbe dbs e.
 //New Route
 router.get("/new", isLoggedIn, listingControllers.renderNewForm);
 
@@ -56,9 +57,6 @@ router.get(
 router.get("/category/:category", wrapAsync(listingControllers.filteredListings));
 
 // searchListings
-// router.get("destination/:destination", wrapAsync(listingControllers.searchListings));
-router.get("/search", wrapAsync(listingControllers.searchListings));
-
-
+router.get("/destination", wrapAsync(listingControllers.searchListings));
 
 module.exports = router;

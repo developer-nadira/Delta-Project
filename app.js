@@ -25,6 +25,7 @@ const ExpressError = require("./utils/ExpressError.js");
 const listingRouter = require("./routes/listing.js")
 const reviewRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
+const landingRouter = require("./routes/landing.js")
 
 // Mongo_Atlas URL--------
 const dbUrl = process.env.ATLASDB_URL;
@@ -106,6 +107,8 @@ app.use((req, res, next) => {
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
+app.use("/", landingRouter);
+
 
 // For random route which are not available in our route
 app.all("*", (req, res, next) => {
