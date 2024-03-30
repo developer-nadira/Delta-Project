@@ -6,27 +6,34 @@
   <div class="col-6 offset-3">
     <form action="/signup" method="POST" class="needs-validation" novalidate>
       <div class="mb-3">
-        <label for="username" class="form-label">username</label>
+        <label for="username" class="form-label">Username</label>
         <input
           name="username"
           id="username"
           type="text"
           class="form-control"
           required
+          pattern="[a-z0-9._]+"
         />
-        <div class="valid-feedback">looks good!</div>
+        <div class="invalid-feedback">Please enter lowercase letters only.</div>
+        <div class="valid-feedback">Looks good!</div>
       </div>
-
+      
       <div class="mb-3">
-        <label for="email" class="form-label">email</label>
+        <label for="email" class="form-label">Email</label>
         <input
           name="email"
           id="email"
           type="email"
           class="form-control"
           required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         />
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+        <div class="valid-feedback">Looks good!</div>
       </div>
+      
+      
 
       <div class="mb-3">
         <label for="password" class="form-label">password</label>

@@ -7,7 +7,7 @@
     <div id="filters">
       <div class="filter">
         <div class="filter-content">
-          <a href="/listings/catagory/trending">
+          <a href="/listings/category/trending">
             <div class="icon-container"><i class="fas fa-fire"></i></div>
             <div class="text-container">Trending</div>
           </a>
@@ -47,7 +47,7 @@
 
       <div class="filter">
         <div class="filter-content">
-          <a href="/listings/category/iconic cites">
+          <a href="/listings/category/iconic cities">
             <div class="icon-container">
               <i class="fa-solid fa-mountain-city"></i>
             </div>
@@ -210,7 +210,7 @@
 </div>
 
 <!-- ---------------------- Listing Cards ---------------------------------------- -->
-<div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1">
+<div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2">
   <% for(let listing of allListings) { %>
 
   <a href="/listings/<%= listing._id %>" class="listing-link">

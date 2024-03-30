@@ -1,11 +1,11 @@
 <% layout("/layouts/boilerplate") %>
 
 <div class="row mt-3 show-card">
-  <div class="col-8 offset-3">
+  <div class="col-lg-6 col-md-10 col-sm-10 offset-lg-3 offset-md-1 offset-sm-1">
     <h3><%= listing.title %></h3>
   </div>
 
-  <div class="listing-card card col-6 offset-3">
+  <div class="listing-card card col-lg-6 col-md-10 col-sm-10 offset-lg-3 offset-md-1 offset-sm-1">
     <img
       src="<%= listing.image.url %>"
       class="card-img-top show-img"
@@ -31,7 +31,7 @@
   <div class="btns">
     <a
       href="/listings/<%= listing._id %>/edit"
-      class="btn mb-3 col-md-2 offset-3 edit-btn"
+      class="btn mb-3 col-lg-1 col-md-2 col-sm-2 offset-lg-3 offset-md-1 offset-sm-1 edit-btn"
       >Edit</a
     >
 
@@ -42,7 +42,7 @@
   <% } %>
 
   <div>
-    <div class="col-8 offset-3 mb-3">
+    <div class="col-8 offset-1 offset-lg-3 mb-3">
       <hr />
       <% if(currUser){ %>
       <h4>Leave a review</h4>
